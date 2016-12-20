@@ -1,0 +1,42 @@
+Directory Structure:
+Please unzip data.zip file.
+Then, move all the contents in unzipped data directory to the code directory(unzipped code.zip) and remove(or just disregard) the data directory.
+Your code directoy should look something like this:
+.
+├── Platinum4
+├── PredictRank.py
+├── PredictUpDown.py
+├── README
+├── README.md
+├── \\
+├── diamond1
+├── diamond2
+├── diamond3
+├── diamond4
+├── diamond5
+├── features.py
+├── features.pyc
+├── gold3
+...
+
+1 directory, 39 files
+
+Note: If you have hard time setting up the directory, simply git clone https://github.com/sjang92/LOLRankPredictor and run the commands below.
+
+
+How to run:
+After setting up the directory and all the Python library such as numpy is properly installed, you can run the predictors very easily:
+
+Rank Predictor:
+    python PredictRank.py
+UpDown Predictor:
+    python PredictUpDown.py
+To run everything streamlined:
+    sh run.sh
+
+
+Brief code structure:
+features.py and rank_Predictor.py are classes for feature extractor and predictors respectively.
+They are used in PredictRank.py and PredictUpDown.py to predict exact rank of the users and whether the users' rank go up, down, or stay.
+statsApi.py is a helper class that contains all the functionalities regarding Riot API usage to gather user info and match history.
+Finally, run.sh folder is a simple bash script that runs both PredictRank.py and PredictUpDown.py consecutively.

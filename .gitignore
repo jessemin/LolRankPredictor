@@ -1,0 +1,4 @@
+*.pyc
+merged-*
+.DS_Store
+*.swp
